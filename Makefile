@@ -6,9 +6,8 @@ LFLAGS=-lm #-L$(DIRSDL)/lib -lSDLmain -lSDL -lSDL_ttf -lSDL_image  -lSDL_sound -
 
 all : main
 
-main: main.o LIST.o
+main: main.o LIST.o QUEUE.o
 	gcc -o $@ $^  $(LFLAGS)
-
 
 
 %.o : %.c
